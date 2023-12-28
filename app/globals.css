@@ -2,26 +2,41 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@font-face {
+  font-family: CircularStd-Book;
+  src: url("../public/fonts/CircularStd-Book.otf");
+  font-weight: normal;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+@font-face {
+  font-family: CircularStd-Bold;
+  src: url("../public/fonts/CircularStd-Bold.otf");
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@font-face {
+  font-family: CircularStd-Light;
+  src: url("../public/fonts/CircularStd-Light.otf");
+  font-weight: lighter;
+}
+
+@font-face {
+  font-family: CircularStd-Medium;
+  src: url("../public/fonts/CircularStd-Medium.otf");
+  font-weight: normal;
+}
+*{
+  font-family: CircularStd-Book ;
+}
+#Bolder{
+  font-family: CircularStd-Bold ;
+
+}
+body{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.Header{
+  font-family: CircularStd-Bold;
 }
