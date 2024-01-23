@@ -6,7 +6,9 @@ import TopAds from '@/components/TopAds'
 const Index = () => {
   return (
     <div className='body w-full min-h-[50vh] h-fit mt-[4em] flex flex-col gap-3 p-3 md:flex-row '>
-      <Aside/>
+      <Aside>
+        
+      </Aside>
       <div className="MainWithTopAd md:order-3">
       <TopAds/>
     <div className="Main">

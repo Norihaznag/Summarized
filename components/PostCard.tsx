@@ -8,11 +8,12 @@ const PostCard = ({style,media}:any) => {
   const [Theme,setTheme] = useContext(ThemeContext) ;
   return (
     <Link href={'/Reading'}>
-      <div className={` w-full min-h-fit grid grid-cols-3 grid-rows-3  p-2 gap-2 items-center shadow 
+      <div className={` w-full min-h-fit grid grid-cols-3 grid-rows-2  items-center shadow p-2
       h-fit ${media}
       rounded-lg cursor-pointer  ${Theme.Theme ? 'bg-[#000000] text-white hover:bg-[#1b1b1b]' : 'bg-[#ffffff] text-black hover:bg-[#ececec]'}`}>
-    <div className="col-span-2 row-span-3 flex flex-col justify-center p-2 gap-1   ">
-        <div className="Title  break-word flex items-center">
+
+    <div className="col-span-2 row-span-3 flex flex-col justify-center p-1    ">
+        <div className="Title w-full">
             <h1 className={`font-[CircularStd-Medium] ${style}`}>Lorem ipsum dolor sit amefffffffffft consectetur, adipisiciddkkfkf.</h1>
             
         </div>
@@ -22,7 +23,8 @@ const PostCard = ({style,media}:any) => {
         </div>
     </div>
    
-        <Image src={Example} alt='image' className='row-span-3 col-start-3 flex w-full h-full shadow object-cover rounded-lg'/>
+        <Image src={Example} alt='image' className='row-span-3 col-start-3 flex w-full h-full shadow 
+        object-cover rounded-lg'/>
     
 </div>
     

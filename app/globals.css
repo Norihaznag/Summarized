@@ -40,3 +40,12 @@ body{
 .Header{
   font-family: CircularStd-Bold;
 }
+.Link{
+  color: white;
+  padding: 1em;
+  width: 100%;
+  font-size: x-large;
+}
+.Link:hover{
+  background: #08005d;
+}

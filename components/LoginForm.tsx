@@ -1,16 +1,25 @@
 'use client'
 import { ThemeContext } from "@/pages/_app"
 import Link from "next/link"
+import { useRouter } from "next/router"
 import { useContext } from "react"
 
 const LoginForm = () => {
-  const [state] = useContext(ThemeContext);
+  let router = useRouter();
+
+  function toAdmin(){
+    router.push('admin/Cpanel');
+  }
+  const [state] :any = useContext(ThemeContext);
   return (
-    <div className={`LoginForm md:max-w-[25em] w-full h-fit  flex flex-col rounded-lg md:order-1   shadow   items-center justify-center p-3 ${state.Theme ? 'bg-black  text-white' : 'bg-slate-100 text-black'}`}>
+    <div className={`LoginForm md:max-w-[25em] w-full h-fit  flex flex-col rounded-lg md:order-1   shadow   items-center justify-center p-3 ${state.Theme ? 'bg-black  text-white' : 'bg-white text-black'}`}>
         <h1 className='text-[1.6em] p-3
         '>Login</h1>
 
-        <form action="/" className='w-full h-full  flex flex-col p-4 gap-4' method="post">
+        <form action="/" className='w-full h-full  flex flex-col p-4 gap-4' method="post" name='fom' onSubmit={(e)=>{
+          e.preventDefault();
+          toAdmin()
+        }}>
 
             <div className="Email flex-col flex">
             <label htmlFor="Email" className="">Email</label>

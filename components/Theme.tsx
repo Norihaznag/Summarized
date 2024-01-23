@@ -4,11 +4,11 @@ import Dark from '@/public/icons/mode-dark-svgrepo-com.svg'
 import {useContext, useState } from "react"
 import { ThemeContext } from "@/pages/_app"
 
-const Theme = () => {
-    const [Mode,setMode] = useContext(ThemeContext) ;
+const Theme = (css:any)=> {
+    const [Mode,setMode]:any = useContext(ThemeContext) ;
 
   return (
-    <div className="md:hover:bg-[#e7e7e728] md:p-2 rounded-full" onClick={()=>{
+    <div className={`md:hover:bg-[#e7e7e728] md:p-2  rounded-full  ${css} `}onClick={()=>{
         setMode((prev : any)=>{
           return {...prev,Theme : !Mode.Theme}
         })

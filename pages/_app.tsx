@@ -4,7 +4,8 @@ import React, { createContext, useState } from "react";
 import '@/app/globals.css'
 import Footer from "@/components/Footer";
 import '@/app/globals.css'
-
+import AdminNav from "@/components/AdminNav";
+import Path from "./Path";
 export const ThemeContext = createContext()
 
 interface PagesComponents{
@@ -15,7 +16,9 @@ interface PagesComponents{
 function MyApp({ Component, pageProps }:PagesComponents) {
   const [state,setState] = useState({
     Theme:false,
-    Window:false
+    Window:false,
+    Admin:false,
+
   })
   return (
     <ThemeContext.Provider value={[state,setState]}>
@@ -23,10 +26,16 @@ function MyApp({ Component, pageProps }:PagesComponents) {
       <Head>
         <meta name="" content="" />
       </Head>
-      <main className={`flex flex-col items-center ${state.Theme ? 'bg-[#202020] text-[#fff]' : 'bg-[#e8e8e8] text-black'}  `}>
-      <Nav/>
+      <main className={`flex flex-col 
+      items-center ${state.Theme ? 'bg-[#202020] text-[#fff]' : 'bg-[#e8e8e8] text-black'}  `}>
+
+       
+       {state.Admin ? <AdminNav/>  : <Nav/> }
+       <Path/>
       <Component {...pageProps}/>
-      <Footer/>
+
+      {state.Admin ? '' : <Footer/> }
+      
       </main>
       
      

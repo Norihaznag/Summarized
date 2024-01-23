@@ -1,6 +1,5 @@
-import { useContext, useState } from "react"
+import { useContext } from "react"
 import WindowLink from "./WindowLink"
-import {Context} from '@/components/Nav'
 import { ThemeContext } from '@/pages/_app'
 const Window = ({className}:any) => {
 
@@ -24,9 +23,6 @@ const Window = ({className}:any) => {
             Account
             </WindowLink>
 
-            <WindowLink href='SignUp'>
-                Login
-            </WindowLink>
 
             <WindowLink href='FAQ'>
                 FAQ
