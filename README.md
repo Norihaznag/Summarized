@@ -1,5 +1,5 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
+This is A blog Created By Me Nour eddine Azinag With Typescript - tailwindCss - Next js 
+Please Feel Free To Contact Me If You like It
 ## Getting Started
 
 First, run the development server:
