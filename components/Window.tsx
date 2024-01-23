@@ -3,7 +3,7 @@ import WindowLink from "./WindowLink"
 import { ThemeContext } from '@/pages/_app'
 const Window = ({className}:any) => {
 
-    const [Theme,setTheme] = useContext(ThemeContext) ;
+    const [Theme,setTheme]:any  = useContext(ThemeContext) ;
 
   return (
    

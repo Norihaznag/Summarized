@@ -9,11 +9,15 @@ const Cpanel = () => {
 
     useEffect(() => {
 
-      setState((prev:any)=>{
-        console.log("state changed")
-        return {...prev,Admin: true} ;
-      })
-    }, [state.Admin]);
+      if(state.Admin !== true){
+        setState((prev:any)=>{
+          console.log("state changed")
+          return {...prev,Admin: true} ;
+        })
+      }
+     
+    },[setState, state.Admin]);
+    // 
     
     
      

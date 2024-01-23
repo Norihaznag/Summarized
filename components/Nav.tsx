@@ -6,11 +6,11 @@ import Window from "./Window"
 import { createContext, useContext, useState } from "react";
 import { ThemeContext } from "@/pages/_app";
 
-export const Context = createContext()
+export const Context = createContext({})
 
 const Nav = ({css}:any) => {
 
-  const [state,setState] = useContext(ThemeContext)
+  const [state,setState] :any = useContext(ThemeContext)
 
   return (
   
@@ -20,11 +20,11 @@ const Nav = ({css}:any) => {
 
        <div className="Logo flex gap-7 w-fit h-fit px-3">
            <h1 className="font-[CircularStd-Bold] text-[1.3em]">Summarized</h1>
-           <div className="links hidden md:flex relative  gap-4 items-center font-bold">
+           <div className="links hidden md:flex relative  gap-4 items-center ">
            <Link href={'/'}>Posts</Link>
            <Link href={'Tags'}>Tags</Link>
            <Link href={'/Account'}>Account</Link>
-           <Link href={'/'}>FAQ</Link>
+           <Link href={'/FAQ'}>FAQ</Link>
 
        </div>
        </div>

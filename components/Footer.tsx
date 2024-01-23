@@ -2,7 +2,7 @@ import { ThemeContext } from "@/pages/_app";
 import Link from "next/link"
 import { useContext } from "react"
 const Footer = () => {
-    const [Theme,setTheme] = useContext(ThemeContext) ;
+    const [Theme,setTheme] :any  = useContext(ThemeContext) ;
 
   return (
     <div className={`Footer w-full h-[full] shadow rounded flex flex-col items-center justify-around   md:grid md:grid-cols-3 md:grid-rows-2 md:gap ${Theme.Theme ? 'bg-[#000000]' : 'bg-white'}`}>
@@ -14,7 +14,7 @@ const Footer = () => {
             <Link href={'/'}>Contact</Link>
             <Link href={'/'}>About</Link>
             <Link href={'/'}>Terms And Conditions</Link>
-            <Link href={'/'}>Developer</Link>
+            <Link href={'https://github.com/Norihaznag'}>Developer</Link>
 
         </div>
         <div className="JoinUsEmail p-3 w-full row-span-2  text-center

@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react'
 import { ThemeContext } from '@/pages/_app'
 const FAQ = () => {
-    const [state,setState] = useContext(ThemeContext) ;
+    const [state,setState] :any = useContext(ThemeContext) ;
   return (
     <div className='FAQ body w-full min-h-[50vh] h-fit mt-[4em] flex flex-col gap-3 p-3  items-center '>
 
@@ -29,7 +29,7 @@ Yes, we welcome guest contributions! If you have a unique perspective or valuabl
 
 <span>
 4. Can I suggest a topic for a future blog post?
-Absolutely! We love hearing from our readers. If you have a topic you'd like us to cover, feel free to contact us with your suggestions. We appreciate your input!
+Absolutely! We love hearing from our readers. If you have a topic you would like us to cover, feel free to contact us with your suggestions. We appreciate your input!
 </span>
 
 <span>
@@ -43,7 +43,7 @@ We strive to publish fresh and engaging content regularly. Our posting frequency
 
 <span>
 7. Is Summarized suitable for  beginners, professionals
-Yes, Your Blog summarized caters to a diverse audience. Whether you're a , you'll find valuable content tailored to your interests and knowledge level.
+Yes, Your Blog summarized caters to a diverse audience. Whether you are a , you will find valuable content tailored to your interests and knowledge level.
 </span>
 
 <span>
@@ -53,7 +53,7 @@ For general inquiries or feedback, you can reach out to us via our page. We appr
 
 <span>
 9. Do you offer advertising or sponsorship opportunities?
-Yes, we do consider advertising and sponsorship collaborations. If you're interested in partnering with , please visit our  page for more details on available opportunities.
+Yes, we do consider advertising and sponsorship collaborations. If you are interested in partnering with , please visit our  page for more details on available opportunities.
 </span>
 
 <span>

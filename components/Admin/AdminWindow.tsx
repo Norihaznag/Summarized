@@ -7,9 +7,7 @@ const AdminWindow = () => {
 
       <div className="Links flex-col flex w-full ">
       <Link href={'./Cpanel'} className="Link" >Dashboard</Link>
-      <Link href={'/Posts'} className="Link" >Posts</Link>
-      <Link href={'/Editor'} className="Link" >Editor</Link>
-      <Link href={'/Settings'} className="Link" >Settings</Link>
+      <Link href={'/Add'} className="Link" >Editor</Link>
       </div>
       
 

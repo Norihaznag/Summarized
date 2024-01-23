@@ -35,7 +35,7 @@ const LoginForm = () => {
         </form>
 
         <div className="Signup flex">
-        <p className="text-sm">You Don't Have an account ?</p>
+        <p className="text-sm">You Dont Have an account ?</p>
         <Link href={'Sign up'} className="text-blue-500 underline">Sign Up</Link>
 
         </div>

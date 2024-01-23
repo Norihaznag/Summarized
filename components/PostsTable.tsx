@@ -33,28 +33,28 @@ const PostsTable = () => {
         {
             select : false,
             ID : 3,
-            Article : 'Horror Movie Pawg Sucking' ,
+            Article : 'Horror Movie ' ,
             Date : '2022/01/18',
             Status : 'Pending',
         },
         {
             select : false,
             ID : 2,
-            Article : 'bbw fucked up Sucking' ,
+            Article : 'A moroccan Revolution' ,
             Date : '2023/01/18',
             Status : 'Published',
         },
         {
             select : false,
             ID : 2,
-            Article : 'galaralla Movie  ' ,
+            Article : 'The Great Gatsby  ' ,
             Date : '2024/01/18',
             Status : 'Pending',
         },
         {
             select : false,
             ID : 2,
-            Article : 'Insularia  Went To Google' ,
+            Article : 'Athiesme is Greater' ,
             Date : '2021/08/10',
             Status : 'Published',
         }

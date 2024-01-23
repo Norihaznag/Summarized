@@ -2,7 +2,7 @@ import { ThemeContext } from '@/pages/_app'
 import React, { useContext } from 'react'
 
 const SortBy = () => {
-    const [state] = useContext(ThemeContext);
+    const [state] :any = useContext(ThemeContext);
   return (
     <div className={`SortBy flex gap-2  py-3 items-center justify-center ` }>
         <h1>Sort By :</h1>

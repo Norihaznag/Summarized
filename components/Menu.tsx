@@ -1,10 +1,10 @@
 'use client';
 import Image from "next/image"
 import Menuicon from '@/public/icons/menu-dots-svgrepo-com.svg'
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import { ThemeContext } from "@/pages/_app"
 
-const Menu = ({onClick}:any) => {
+const Menu = () => {
   const [state,setState]:any = useContext(ThemeContext);
 
   return (

@@ -47,5 +47,11 @@ body{
   font-size: x-large;
 }
 .Link:hover{
-  background: #08005d;
+  background: #005d0b;
+}
+#quil img{
+  width: 40%;
+  height: 40%;
+  object-fit: contain;
+  padding: 4px;
 }

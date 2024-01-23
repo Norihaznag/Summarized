@@ -8,24 +8,25 @@ import { ThemeContext } from '@/pages/_app';
 import Image from 'next/image';
 import MenuIc from '@/public/icons/Opened.svg'
 import Close from '@/public/icons/Close.svg'
-
+import { useRouter } from 'next/router';
 const Nav = () =>{
 
   const [theme]:any = useContext(ThemeContext) ;
+  const router = useRouter();
 
   return(
   <nav className={`w-full min-h-[2em] h-fit flex  items-center pr-[5em] justify-between md:px-6 ${theme.Theme ? "bg-black" : ''}`}>
  
-  <Autor Name='Nordine ' NameColor='' Role="Admin" RoleColor=''/>
+  <Autor Name='Nordine ' NameColor=''  RoleColor=''/>
 
   <div className="whole flex gap-3  justify-end items-center min-w-fit">
 
   <div className="Links md:flex gap-5 hidden">
 
   <Link href={'Cpanel'}>Dashboard</Link>
-  <Link href={'Posts'}>Posts</Link>
-  <Link href={'AddPost'}>Editor</Link>
-  <Link href={'Settings'}>Settings</Link>
+ 
+  <Link href={'Add'}>AddPost</Link>
+ 
   </div>
   <Theme/>
   </div>

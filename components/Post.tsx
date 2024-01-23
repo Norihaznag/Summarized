@@ -11,7 +11,7 @@ import { useContext } from 'react'
 import { ThemeContext } from '@/pages/_app'
 
 const Post = () => {
-  const [Theme,setTheme] = useContext(ThemeContext) ;
+  const [Theme,setTheme]:any = useContext(ThemeContext) ;
   return (
     <div className={`Post  h-fit shadow rounded-lg pt-4  flex flex-col gap-2 md:col-span-5 md:col-start-1 row-start-1 ${Theme.Theme ? 'bg-[#000000]' : 'bg-white'}`}>
        <div className="Info w-full h-[fit] flex gap-2 justify-around  

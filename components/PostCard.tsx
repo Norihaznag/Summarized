@@ -5,7 +5,7 @@ import { useContext } from 'react'
 import { ThemeContext } from '@/pages/_app'
 
 const PostCard = ({style,media}:any) => {
-  const [Theme,setTheme] = useContext(ThemeContext) ;
+  const [Theme] :any = useContext(ThemeContext) ;
   return (
     <Link href={'/Reading'}>
       <div className={` w-full min-h-fit grid grid-cols-3 grid-rows-2  items-center shadow p-2
