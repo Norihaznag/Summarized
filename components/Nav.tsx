@@ -20,7 +20,7 @@ const Nav = ({css}:any) => {
 
        <div className="Logo flex gap-7 w-fit h-fit px-3">
            <h1 className="font-[CircularStd-Bold] text-[1.3em]">Summarized</h1>
-           <div className="links hidden md:flex relative  gap-4 items-center ">
+           <div className="links max-[764px]:hidden md:flex relative  gap-4 items-center ">
            <Link href={'/'}>Posts</Link>
            <Link href={'Tags'}>Tags</Link>
            <Link href={'/Account'}>Account</Link>
